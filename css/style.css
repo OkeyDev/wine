@@ -880,8 +880,10 @@ body.open {
   padding: 10px;
   height: 50px;
   width: 50px;
-  background: url("../img/vine.png") center no-repeat content-box;
-  background-size: contain;
+  background-image: url("../img/vine.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px;
   transition: 0.1s transform ease-in-out;
 }
 
@@ -948,7 +950,10 @@ body.open {
 
 .hero {
   position: relative;
-  background: #EDEDED url("../img/bgc.png") no-repeat center;
+  background-color: #EDEDED;
+  background-image: url("../img/bgc.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 112px 0;
   height: 100vh;
@@ -1067,11 +1072,11 @@ body.open {
   flex-direction: column;
 }
 
-.collection__images picture :not(:last-child) {
+.collection__images picture:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.collection__img-row picture :not(:last-child) {
+.collection__img-row picture:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -1493,9 +1498,9 @@ body.open {
   }
 }
 
-.webp .navbar .navbar-header .navbar-toggler { background: url(../img/vine.webp) center no-repeat content-box; }
+.webp .navbar .navbar-header .navbar-toggler { background-image: url(../img/vine.webp); }
 
-.webp .hero { background: #EDEDED url(../img/bgc.webp) no-repeat center; }
+.webp .hero { background-image: url(../img/bgc.webp); }
 
 .webp .tasting__form-block:before { background: url(../img/grapes.webp) no-repeat center; }
 
